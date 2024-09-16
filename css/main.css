@@ -69,6 +69,8 @@ header nav {
 }
 
 header nav ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -158,4 +160,64 @@ footer span {
 	text-transform: lowercase;
 	color: #45610E;
 	font-size: .875rem;
+}
+
+/******** MEDIA STYLES ********/
+
+@media all and (min-width: 768px) {
+	/* Tablet styles are here */
+
+	/******** BOTTOM SECTION ********/
+	.bottom-section .content-wrapper {
+		justify-content: space-evenly;
+	}
+
+	.section-one {
+		width: 26%;
+	}
+
+	.section-two {
+		width: 40%;
+		border-left: 5px solid #EEE;
+		border-right: 5px solid #EEE;
+		border-top: none;
+		border-bottom: none;
+		padding: 0 30px;
+	}
+
+	.section-three {
+		width: 26%;
+	}
+	}
+@media all and (min-width: 1200px) {
+	/*Desktop styles are here*/
+
+	/******* GLOBAL STYLES *******/
+	body {
+		font-size: 1em;
+	}
+	/******* HEADER STYLES *******/
+	header .content-wrapper {
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+	}
+
+	header h1 {
+		width: 30%;
+		padding: 0;
+		border-bottom: none;
+		text-align: left;
+	}
+
+	header nav {
+		width: 21%;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	
 }
